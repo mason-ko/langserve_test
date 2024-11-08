@@ -27,7 +27,7 @@ app.add_middleware(
 
 @app.get("/")
 async def redirect_root_to_docs():
-    return RedirectResponse("/xionic/playground")
+    return RedirectResponse("/prompt/playground")
 
 
 add_routes(app, chain, path="/prompt")
