@@ -11,6 +11,7 @@ from translator import chain as EN_TO_KO_chain
 from llm import llm as model
 from xionic import chain as xionic_chain
 
+from prompt.multi_chain import chain2 as test_chain1
 
 app = FastAPI()
 
@@ -32,6 +33,7 @@ async def redirect_root_to_docs():
 
 add_routes(app, chain, path="/prompt")
 
+add_routes(app, test_chain1, path="/test1")
 
 class InputChat(BaseModel):
     """Input for the chat endpoint."""
