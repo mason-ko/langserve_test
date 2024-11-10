@@ -8,7 +8,7 @@ from langserve import add_routes
 from chain import chain
 from chat import chain as chat_chain
 from translator import chain as EN_TO_KO_chain
-from llm import llm as model
+from llm.gemini import llm as model
 from xionic import chain as xionic_chain
 
 from prompt.multi_chain import chain2 as test_chain1

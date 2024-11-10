@@ -32,3 +32,4 @@ prompt = PromptTemplate(
 
 # 'phenomenon' 변수만 입력하여 현재 계절에 맞는 문장 생성
 print(prompt.format(phenomenon="꽃가루 증가"))
+
